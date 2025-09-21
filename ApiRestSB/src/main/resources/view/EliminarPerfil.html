@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/ManejoSaldo.css" />
+    <script src="../scripts/eliminarPerfil.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="MenuClientes.html">Volver</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección de Búsqueda de Cliente -->
+        <section>
+            <h2>Buscar Cliente</h2>
+            <input type="text" id="cedula" placeholder="Ingrese la cédula del cliente">
+            <input type="password" id="password" placeholder="Ingrese la contraseña de la cuenta">
+            <button id="buscarCliente">Buscar</button>
+        </section>
+        <!-- Sección de Información del Cliente -->
+        <section id="info" class="hidden">  
+            <div id="infoDelCliente" class="info"></div>    
+        </section> 
+        <!-- Sección para Eliminar Perfil -->
+        <section id="Confirmacion" class="hidden">
+            <h3  id="tituloConfirmar">Confirmar Perfil</h3> 
+            <button  id="confirmar">Eliminar</button>
+        </section>
+    </main>
+</body>
+</html>
+     

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ApiRestSbApplication",
+            "request": "launch",
+            "mainClass": "com.example.ApiRestSB.ApiRestSbApplication",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiRestSbApplication<ApiRestSB>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.ApiRestSB.ApiRestSbApplication",
+            "projectName": "ApiRestSB",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

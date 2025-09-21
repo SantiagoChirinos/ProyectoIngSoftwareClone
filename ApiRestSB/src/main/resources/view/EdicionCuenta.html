@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abasto Aldebaran - Manejo de Saldo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/EditarCuenta.css" />
+    <script src="../scripts/scriptModificarCuenta.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="MenuClientes.html">Volver</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección de Búsqueda de Cliente -->
+        <section>
+            <h2>Confirme su cuenta</h2>
+            <input type="text" id="cedula" placeholder="Ingrese la cédula de la cuenta">
+            <input type="password" id="password" placeholder="Ingrese la contraseña de la cuenta">
+            <button id="buscarCliente">Confirmar</button>
+        </section>
+        <!-- Sección de Información del Cliente -->
+        <section id="info" class="hidden">  
+            <div id="infoDelCliente" class="info"></div>    
+        </section> 
+        <!-- Sección para Modificar el Saldo -->
+            <section id="modificiones" class="hidden">
+                <h3 class="no-hidden" id="tituloModificar">Seleccione el campo a cambiar</h3> 
+                    <ul class="cambios">
+                        <li class="tipo-cambio"><a id="cambiar-nombre">Nombre</a></li>
+                        <li class="tipo-cambio"><a id="cambiar-password">Contraseña</a></li>
+                        <li class="tipo-cambio"><a id="cambiar-telefono">Telefono</a></li>
+                        <li class="tipo-cambio"><a id="cambiar-correo">Correo</a></li>
+                    </ul>
+                <div id="datos-cambio"></div>
+                <button id="confirmar-cambio" class="hidden">Confirmar</button>
+            </section>
+    </main>
+</body>
+</html>

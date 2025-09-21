@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abasto Aldebaran - Consultar Perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/ConsultarPerfil.css" />
+    <script src="../scripts/consultarPerfil.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <li><a href="MenuClientes.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h2>Buscar por Cedula</h2>
+                <input type="text" id="cedulaInput" placeholder="Ingrese la cedula">
+                <button id="buscarPorCedula">Buscar</button>
+            </section>
+            <div id="info" class="info hidden">
+                <p><strong>Cedula:</strong> <span id="cedula"></span></p>
+                <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+                <p><strong>Apellido:</strong> <span id="apellido"></span></p>
+                <p><strong>Nacimiento:</strong> <span id="nacimiento"></span></p>
+                <p><strong>Correo:</strong> <span id="correo"></span></p>
+                <p><strong>Telefono:</strong> <span id="telefono"></span></p>
+                <p><strong>Saldo:</strong> <span id="saldo"></span></p>
+                <div id="cuadroPrivilegio" class="cuadro"></div>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>

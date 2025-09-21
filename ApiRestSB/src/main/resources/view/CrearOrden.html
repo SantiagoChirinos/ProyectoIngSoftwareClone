@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es-Ve">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registrar Orden | Abasto Albedarán</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Grupo 84-3 (Jesus)">
+    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styleRegistrarProducto.css">
+</head>
+<body>
+    <div class="RegistrarProducto">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="MenuOrdenes.html">Volver</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="texto">
+            <h2>Registrar Nueva Orden</h2>
+        </div>
+        <div class="contenedor-formulario">
+            <div class="top-formulario">
+                <div class="texto-formulario">
+                    <h3>Ingrese los datos de la orden</h3>
+                </div>
+                <div class="preinputs">
+                    <div class="input">
+                        <button class="formbold-btn" id="button">
+                            Registrar Orden
+                        </button>
+                    </div>
+                    <div class="input">
+                        <button class="formbold-btn" id="button" onclick="location.href='NuevaCuentaClienteMenu.html'">
+                            Registrar Cliente
+                        </button>
+                    </div>
+                    <div class="input">
+                        <input type="button" value="Borrar">
+                    </div>
+                </div>
+            </div>
+            <form> 
+                <div class="input">
+                    <label for="cedulaCliente">Cédula del Cliente</label>
+                    <input placeholder="Ingrese la cédula del cliente" type="text" id="cedulaCliente" class="cedulaCliente" required>
+                </div>
+                <div class="input">
+                    <label for="productos">Productos</label>
+                    <input placeholder="Ingrese los productos (separados por comas)" type="text" id="productos" class="productos" required>
+                </div>
+                <div class="input">
+                    <label for="cantidadesProductos">Cantidades</label>
+                    <input placeholder="Ingrese las cantidades (separadas por comas)" type="text" id="cantidadesProductos" class="cantidadesProductos" required>
+                </div>
+                <div class="input">
+                    <label for="disp">Estado de orden</label>
+                    <select name="disp" id="disp">
+                        <option value="Abierta">Abierta</option>
+                        <option value="Cerrada">Cerrada</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="fechaCreacion">Fecha de Creación</label>
+                    <input placeholder="Ingrese la fecha de creación" type="date" id="fechaCreacion" class="fechaCreacion" required>
+                </div>
+                <div class="input">
+                    <label for="fechaEntrega">Fecha de Entrega</label>
+                    <input placeholder="Ingrese la fecha de entrega" type="date" id="fechaEntrega" class="fechaEntrega" required>
+                </div>
+            </form> 
+        </div>
+    </div>            
+    <script src="scripts/scriptRegistrarOrden.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+:root{
+    --negro: #000;
+    --fuente:sans-serif;
+    --sombra:rgba(0, 0, 0, 0.2) 0px 2px 6px;
+    --azul: rgb(0, 103, 184);
+}
+body{
+    font-family: var(--fuente);
+    background-color: rgb(255, 255, 255);
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+.contenedor-formulario{
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    width: calc(100% - 40px);
+}
+header {
+  background: #0056b3; /* Azul */
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px; /* Tamaño más grande */
+}
+
+nav .logo img {
+  height: 100px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  font-size: larger;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  padding: 20px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+nav .nav-links .active{
+ 
+  background-color: #054a94;
+ 
+}
+
+nav .nav-links a:hover {
+  background-color: #003f83;
+}
+.formulario{
+    flex: auto;
+    padding:  10px 60px 40px;
+    margin-top: 90px;
+    box-shadow: var(--sombra);
+    
+}
+.texto-formulario h1, p , .input label{
+    color: var(--negro);
+}
+
+.texto-formulario h1{
+    text-align: center;
+    font-size: 35px;
+}
+.texto-formulario p{
+    text-align: center;
+    font-size: 25px;
+}
+.input label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.input input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    
+}
+.input input[type="submit"]{
+    background-color:var(--azul);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;    
+    transition: all ease-in-out 0.3s;
+    
+}
+.input input[type="submit"]:HOVER{
+    color: #000;
+    background-color: #86adce;
+    cursor: pointer;
+    
+}
+.newaccount{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: left;
+    p{
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+        color: var(--azul);
+        padding-left: 8px;
+        font-weight: 700;
+    }
+}

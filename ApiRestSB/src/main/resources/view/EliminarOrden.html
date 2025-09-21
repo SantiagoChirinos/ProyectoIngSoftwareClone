@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abasto Aldebaran - Manejo de Saldo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/MenuClientes.css" />
+    <link rel="stylesheet" href="../css/TablaEliminarProducto.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="MenuOrdenes.html">Volver</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Eliminar Orden</h1>
+        <div class="container">
+            <h2>Consultar Orden</h2> 
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Ingrese Cedula del Cliente">
+    <button onclick="buscarOrden()">Buscar</button>
+</div>
+</div>
+</main>
+<table id="tabla">
+    <thead>
+        <tr>
+            <th colspan="6">Productos Registrados</th>
+        </tr>
+        <tr class="no-hover">
+            <th>Cedula</th>
+            <th>Productos</th>
+            <th>Cantidades</th>
+            <th>Estado</th>
+            <th>Fecha de creación</th>
+            <th>Fecha de entrega</th>
+        </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+</table>
+<div class="container">
+    <button id="delete-button" class="btn" onclick="eliminarOrden()">Eliminar Orden</button>
+</div>
+    
+</body>
+<script src="../scripts/scriptEliminarOrden.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

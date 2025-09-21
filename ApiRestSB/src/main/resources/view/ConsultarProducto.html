@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Clientes</title>
+    <link rel="stylesheet" href="../css/MenuClientes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía">
+            </div>
+            <ul class="nav-links">
+                <li><a href="MenuClientes.html">Clientes</a></li>
+                <li><a id="MenuSaldo" href="MenuSaldo.html">Saldo</a></li>
+                <li><a href="MenuProductos.html">Producto</a></li>
+                <li><a href="MenuPrincipal.html" class="active">Órdenes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Consultar Producto</h2> 
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ingrese el ID del producto">
+                <button onclick="buscarProducto()">Buscar</button>
+            </div>
+        </div>
+    </main>
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th colspan="5">Productos</th>
+          </tr>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Disponible</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    <script src="scripts/Consultarproducto.js"></script>
+    <script>
+        if(localStorage.getItem('rol') == 0){ //oculta para los que sean clientes
+            document.getElementById('MenuSaldo').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

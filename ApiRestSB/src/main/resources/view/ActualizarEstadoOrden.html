@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es-Ve">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registrar Producto | Abasto Albedarán</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Grupo 84-3 (Jesus)">
+    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styleRegistrarProducto.css">
+    <link rel="stylesheet" href="../css/MenuClientes.css">
+    <link rel="stylesheet" href="../css/TablaEliminarProducto.css" />
+</head>
+<body>
+    <div class="RegistrarProducto">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="MenuOrdenes.html">Volver</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Actualizar Estado de Orden</h1>
+        <div class="container">
+            <h2>Consultar Orden</h2> 
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ingrese Cedula del Cliente">
+                <button onclick="buscarOrden()">Buscar</button>
+            </div>
+        </div>
+        </main>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th colspan="6">Productos Registrados</th>
+                </tr>
+                <tr class="no-hover">
+                    <th>Cedula</th>
+                    <th>Productos</th>
+                    <th>Cantidades</th>
+                    <th>Estado</th>
+                    <th>Fecha de creación</th>
+                    <th>Fecha de entrega</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+        <div class="contenedor-formulario">
+            <div class="top-formulario">
+                <div class="texto-formulario">
+                    <h3>Modifique los datos del producto</h3>
+                </div>
+                <div class="preinputs">
+                    <div class="input">
+                        <button class="formbold-btn" onclick="actualizarProducto()">
+                            Actualizar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form> 
+                <div class="input">
+                    <label for="disp">Estado</label>
+                    <select name="disp" id="disp">
+                        <option value="Abierta">Abierta</option>
+                        <option value="Cerrada">Cerrada</option>
+                    </select>
+                </div>
+            </form> 
+        </div>
+    </div>            
+    <script src="scripts/scriptActualizarEstadoOrden.js"></script>
+</body>
+</html>

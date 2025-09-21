@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head lang="es-Ve">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio de Sesion | Abasto Albedarán</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex,nofollow" \>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Grupo 84-3(Jesus)" \>
+    <script src="../scripts/scriptCrearCuentaCliente.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styleNewaccount.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <div class="nombre">
+            <h1>Abasto Albedarán</h1>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor-formulario">
+        <form class="formulario">
+            <div class="texto-inicial">
+                <h1>Crear una cuenta</h1>
+                <h2>Ingrese sus datos</h2>
+            </div>
+            <div class="contenedor-nombres input">
+                <div class="nombre">
+                <input type="text" name="Nombre" placeholder="Nombre" id="Nombre" required /><br />
+            </div>
+            <div class="apellido">
+                <input type="text" name="Apellido" placeholder="Apellido" id="Apellido" required /><br />
+            </div>
+            
+        </div>
+        <div class="contenedor-2">
+            <div class="cedula">
+                <p>Ingrese su cedula</p>
+                <input type="text" name="Cedula" placeholder="" id="cedula" required /><br />
+            </div>
+            <div class="fecha">
+                <p>Ingrese su fecha de nacimiento</p>
+                <input type="date" name="Fecha de nacimiento"id="fecha-nacimiento" required /><br /><br />
+            </div>
+            </div>
+            <div class="contenedor-3">
+            <div class="contenedor-email input">
+                <p>Ingrese su correo</p>
+                <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com"><br /><br />
+            </div>
+            <div class="contenedor-phone input">
+                <p>Ingrese su telefono</p>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 0414-000-0000"
+                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br><br>
+            </div>
+        </div>
+            <div class="contenedor-password input">
+                <div class="password1">
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="password1" name="password" minlength="10" required><br><br>
+            </div>
+            <p>La contraseña debe tener al menos 10 caracteres, un número y una mayúscula</p>
+            <div class="password2"><label for="pwd">Confirme la contraseña</label>
+                <input type="password" id="password2" name="password2" minlength="10" required><br><br>
+            </div>
+        </div>
+            <div class="contenedor-submit input">
+                <input type="button" id="boton-crear-cuenta-cliente" class="submit " value="Crear Cuenta">
+            </div>
+            
+            <div class="contenedor-volverIS">
+                <div class="texto">
+                    <p>¿Ya tiene una cuenta?</p>
+                </div>
+                <div class="textoa">
+                    <a href="InicioSesion.html">Regresar a inicio de sesión.</a>
+                </div>
+
+                </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Clientes</title>
+    <link rel="stylesheet" href="../css/MenuClientes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <li><a href="MenuPrincipal.html" class="active">Clientes</a>
+                <li><a id="MenuSaldo" href="MenuSaldo.html">Saldo</a></li>
+                <li><a href="MenuProductos.html">Producto</a></li>
+                <li><a href="MenuOrdenes.html">Órdenes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <button class="btn" onclick="location.href='ConsultarPerfil.html'">Buscar Clientes</button>
+            <button id="NuevaCuentaClienteMenu" class="btn" onclick="location.href='NuevaCuentaClienteMenu.html'">Registrar Cliente</button>
+            <button id="NuevaCuentaAdmin" class="btn" onclick="location.href='NuevaCuentaAdmin.html'">Registrar Empleado</button>
+            <button class="btn" onclick="location.href='EliminarPerfil.html'">Eliminar Perfil</button>
+            <button class="btn" onclick="location.href='EdicionCuenta.html'">Editar Cuenta</button>
+        </div>
+    </main>
+    <script>
+    if(localStorage.getItem('rol') != 2){ //oculta para los que no sean admins
+        document.getElementById('NuevaCuentaAdmin').classList.add('hidden');
+        document.getElementById('NuevaCuentaClienteMenu').classList.add('hidden');
+    }
+    if(localStorage.getItem('rol') == 0){ //oculta para los que sean clientes
+        document.getElementById('MenuSaldo').classList.add('hidden');
+    }
+    </script>
+</body>
+</html>

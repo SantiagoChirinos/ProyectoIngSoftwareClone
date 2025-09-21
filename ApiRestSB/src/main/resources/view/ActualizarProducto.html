@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es-Ve">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registrar Producto | Abasto Albedarán</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Grupo 84-3 (Jesus)">
+    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styleRegistrarProducto.css">
+    <link rel="stylesheet" href="../css/MenuClientes.css">
+</head>
+<body>
+    <div class="RegistrarProducto">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="MenuProductos.html">Volver</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Actualizar Producto</h2> 
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ingrese el ID del producto">
+                <button onclick="buscarProducto()">Buscar</button>
+            </div>
+        </div>
+        <div class="contenedor-formulario">
+            <div class="top-formulario">
+                <div class="texto-formulario">
+                    <h3>Modifique los datos del producto</h3>
+                </div>
+                <div class="preinputs">
+                    <div class="input">
+                        <button class="formbold-btn" onclick="actualizarProducto()">
+                    Actualizar                        </button>
+                    </div>
+                </div>
+            </div>
+            <form> 
+                <div class="input">
+                    <label for="nombre">Nombre</label>
+                    <input placeholder="Ingrese el nombre del producto" type="text" id="nombre" class="nombre" required>
+                </div>
+                <div class="input">
+                    <label for="identificacion">Identificacion</label>
+                    <input placeholder="Ingrese el ID del producto" type="text" id="identificacion" class="identificacion" required>
+                </div>
+                <div class="input">
+                    <label for="descripcion">Descripción (Opcional)</label>
+                    <input placeholder="Ingrese una descripción" type="text" id="descripcion" class="descripcion" required>
+                </div>
+                <div class="input">
+                    <label for="disp">Disponible</label>
+                    <select name="disp" id="disp">
+                        <option value="Disponible">Si</option>
+                        <option value="No Disponible">No</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="precio">Precio</label>
+                    <input placeholder="Ingrese el precio" type="text" id="precio" class="precio" required>
+                </div>
+            </form> 
+        </div>
+    </div>            
+    <script src="scripts/scriptActualizarProducto.js"></script>
+</body>
+</html>

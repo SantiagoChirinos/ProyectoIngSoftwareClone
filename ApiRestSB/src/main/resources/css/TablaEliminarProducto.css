@@ -1,0 +1,11 @@
+tr.hoverPossible:hover{
+    background-color: #949494;
+}
+
+tr.selected{
+    background-color: #84c9fd;
+}
+
+.selected {
+    background-color: #9ad1b8; /* Color de fondo para la fila seleccionada */
+}

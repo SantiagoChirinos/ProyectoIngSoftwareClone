@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tabla Juegos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../css/table.css">
+       <link rel="stylesheet" href="../css/css.css">
+    </head>
+    <body>
+        <div class="contenedor-texto">
+        <h1>Juegos</h1>
+        <a href="index.html" class="formbold-table-link">Registrar Juego</a>
+    </div>
+        <table id="tabla">
+            <thead>
+              <tr>
+                <th colspan="5">Juegos Registrados</th>
+              </tr>
+              <tr>
+                <th>#</th>
+                <th >Nombre</th>
+                <th >Género</th>
+                <th >Año</th>
+                <th >Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+          <div id="formulario">
+            <div class="formbold-form-wrapper">
+                <h2>Modificar Juego</h2>
+               <form>
+                  <div class="formbold-input-flex">
+                    <div>
+                        <input
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Minecraft"
+                        class="formbold-form-input"
+                        />
+                        <label for="nombre" class="formbold-form-label"> Nombre del Juego </label>
+                    </div>
+                    <div>
+                        <input
+                        type="text"
+                        name="genero"
+                        id="genero"
+                        placeholder="Aventura"
+                        class="formbold-form-input"
+                        />
+                        <label for="genero" class="formbold-form-label"> Género </label>
+                    </div>
+                  </div>
+          
+                  <div class="formbold-input-flex">
+                    <div>
+                        <input
+                        type="text"
+                        name="año"
+                        id="año"
+                        placeholder="1989"
+                        class="formbold-form-input"
+                        />
+                        <label for="año" class="formbold-form-label"> Año </label>
+                    </div>
+                  </div>
+          
+                  <button  class="formbold-btn" id="btnModificar">
+                      Modificar
+                  </button>
+              </form>
+            </div>
+        </div>
+        <script src="table.js"></script>
+    </body>
+</html>

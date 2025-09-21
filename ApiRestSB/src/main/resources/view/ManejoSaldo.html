@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abasto Aldebaran - Manejo de Saldo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/ManejoSaldo.css" />
+    <script src="../scripts/modificarSaldo.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="MenuSaldo.html">Volver</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección de Búsqueda de Cliente -->
+        <section>
+            <h2>Buscar Cliente</h2>
+            <input type="text" id="cedula" placeholder="Ingrese la cédula del cliente">
+            <button id="buscarCliente">Buscar</button>
+        </section>
+        <!-- Sección de Información del Cliente -->
+        <section id="info" class="hidden">  
+            <div id="infoDelCliente" class="info"></div>    
+        </section> 
+        <!-- Sección para Modificar el Saldo -->
+            <section id="modificarSaldo" class="hidden">
+                <h3 class="hidden" id="tituloModificarSaldo">Modificar Saldo</h3> 
+                <button class="hidden" id="aumentarSaldo">Aumentar Saldo</button>
+                <button class="hidden" id="disminuirSaldo">Disminuir Saldo</button>
+                <!-- Entrada para Monto -->
+                <div id="aumentarSaldoCampo">
+                    <input type="number" id="montoMas" class="hidden" placeholder="Ingrese el monto"  oninput="validarMonto(this)">
+                    <button class="hidden" id="confirmarCambioAumento">Confirmar</button>
+                </div>
+                <div id="disminuirSaldoCampo">
+                    <input type="number" id="montoMenos" class="hidden" placeholder="Ingrese el monto a disminuir"  oninput="validarMonto(this)">
+                    <button class="hidden" id="confirmarCambioDisminuye">Confirmar</button>
+                </div>
+            </section>
+    </main>
+</body>
+</html>

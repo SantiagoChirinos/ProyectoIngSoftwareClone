@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Clientes</title>
+    <link rel="stylesheet" href="../css/MenuClientes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/LogoAldebaran.png" alt="Logo de la compañía" href="MenuPrincipal.html">
+            </div>
+            <ul class="nav-links">
+                <li><a href="MenuProductos.html">Producto</a></li>
+                <li><a href="MenuOrdenes.html">Órdenes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Consultar Orden</h2> 
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ingrese Cedula del Cliente">
+                <button onclick="buscarOrden()">Buscar</button>
+            </div>
+        </div>
+    </main>
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th colspan="6">Ordenes</th>
+          </tr>
+          <tr>
+            <th>Cedula</th>
+            <th>Productos</th>
+            <th>Cantidades</th>
+            <th>Estado</th>
+            <th>Fecha de creacion</th>
+            <th>Fecha de entrega</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    <script src="scripts/scriptConsultarOrden.js"></script>
+</body>
+</html>
